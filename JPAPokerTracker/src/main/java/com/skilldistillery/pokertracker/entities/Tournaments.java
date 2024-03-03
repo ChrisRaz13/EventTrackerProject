@@ -12,7 +12,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 @Entity
-public class Tournament {
+public class Tournaments {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -39,7 +39,7 @@ public class Tournament {
 	private BigDecimal roi;
 
 	// Assuming ITMPercentage is calculated and not stored
-	public Tournament() {
+	public Tournaments() {
 	}
 
 	public int getTournamentId() {
@@ -142,7 +142,7 @@ public class Tournament {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Tournament other = (Tournament) obj;
+		Tournaments other = (Tournaments) obj;
 		return tournamentId == other.tournamentId;
 	}
 

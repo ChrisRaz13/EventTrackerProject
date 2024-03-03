@@ -21,7 +21,7 @@ public class Player {
     private int ranking;
 
     @OneToMany(mappedBy = "player")
-    private List<Tournament> tournaments;
+    private List<Tournaments> tournaments;
 
     public Player() {
     }
@@ -50,11 +50,11 @@ public class Player {
 		this.ranking = ranking;
 	}
 
-	public List<Tournament> getTournaments() {
+	public List<Tournaments> getTournaments() {
 		return tournaments;
 	}
 
-	public void setTournaments(List<Tournament> tournaments) {
+	public void setTournaments(List<Tournaments> tournaments) {
 		this.tournaments = tournaments;
 	}
 
